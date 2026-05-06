@@ -1,5 +1,18 @@
 from __future__ import annotations
 
+<<<<<<< codex/create-project-instructions-for-poly-market-finance-47wtli
+import sys
+from pathlib import Path
+
+
+# Allow running via `python main.py` when cwd is `Kronos/polymarket_bot`.
+if __package__ is None or __package__ == "":
+    repo_root = Path(__file__).resolve().parents[1]
+    if str(repo_root) not in sys.path:
+        sys.path.insert(0, str(repo_root))
+
+=======
+>>>>>>> master
 from polymarket_bot.config.settings import RiskConfig, RuntimeConfig, StrategyConfig
 from polymarket_bot.data.collector import PolyMarketCollector
 from polymarket_bot.decision.engine import DecisionEngine
